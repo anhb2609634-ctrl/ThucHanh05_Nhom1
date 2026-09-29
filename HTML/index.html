@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#f5f7f2">
+	<title>Vòng tuần hoàn của nước | Infographic và video</title>
+	<meta name="description" content="Infographic và video ngắn giải thích các giai đoạn trong vòng tuần hoàn của nước.">
+	<style>
+		:root {
+			color-scheme: light;
+			--ink: #172b31;
+			--muted: #53696d;
+			--paper: #f5f7f2;
+			--teal: #087f79;
+			--blue: #2584a6;
+			--lime: #d9e96b;
+			--line: #cddbd5;
+		}
+
+		* { box-sizing: border-box; }
+
+		body {
+			margin: 0;
+			background: var(--paper);
+			color: var(--ink);
+			font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+		}
+
+		.page {
+			width: min(1120px, calc(100% - 40px));
+			margin: 0 auto;
+			padding: 38px 0 64px;
+		}
+
+		.eyebrow {
+			margin: 0 0 12px;
+			color: var(--teal);
+			font-size: 12px;
+			font-weight: 800;
+			letter-spacing: 1.5px;
+			text-transform: uppercase;
+		}
+
+		h1 {
+			max-width: 720px;
+			margin: 0;
+			font-family: Georgia, "Times New Roman", serif;
+			font-size: clamp(38px, 6vw, 68px);
+			font-weight: 500;
+			letter-spacing: 0;
+			line-height: 0.98;
+		}
+
+		.intro {
+			max-width: 620px;
+			margin: 18px 0 32px;
+			color: var(--muted);
+			font-size: 17px;
+			line-height: 1.6;
+		}
+
+		.infographic {
+			overflow: hidden;
+			border: 1px solid var(--line);
+			background: #e9f2ec;
+		}
+
+		.infographic svg {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+
+		.mobile-cycle { display: none; }
+
+		.stats {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			border-top: 1px solid var(--line);
+			background: #fff;
+		}
+
+		.stat {
+			min-height: 126px;
+			padding: 23px 28px;
+		}
+
+		.stat + .stat { border-left: 1px solid var(--line); }
+
+		.stat strong {
+			display: block;
+			margin-bottom: 8px;
+			color: var(--teal);
+			font-family: Georgia, "Times New Roman", serif;
+			font-size: 32px;
+			font-weight: 500;
+		}
+
+		.stat span { color: var(--muted); font-size: 14px; line-height: 1.45; }
+
+		.video-section {
+			display: grid;
+			grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+			gap: 36px;
+			align-items: center;
+			padding-top: 56px;
+		}
+
+		h2 {
+			margin: 0 0 12px;
+			font-family: Georgia, "Times New Roman", serif;
+			font-size: 34px;
+			font-weight: 500;
+			line-height: 1.1;
+		}
+
+		.video-copy p:last-child { margin: 0; color: var(--muted); line-height: 1.6; }
+
+		video {
+			display: block;
+			width: 100%;
+			aspect-ratio: 16 / 9;
+			background: #172b31;
+			object-fit: cover;
+		}
+
+		.site-footer {
+			margin-top: 48px;
+			padding-top: 16px;
+			border-top: 1px solid var(--line);
+			color: var(--muted);
+			font-size: 13px;
+			line-height: 1.5;
+		}
+
+		@media (max-width: 680px) {
+			.page { width: min(100% - 28px, 540px); padding-top: 27px; }
+			.intro { margin-bottom: 24px; font-size: 16px; }
+			.desktop-cycle { display: none; }
+			.mobile-cycle { display: block; }
+			.stats { grid-template-columns: 1fr; }
+			.stat { min-height: auto; padding: 17px 20px; }
+			.stat + .stat { border-top: 1px solid var(--line); border-left: 0; }
+			.stat strong { display: inline-block; min-width: 104px; margin: 0 10px 0 0; font-size: 27px; vertical-align: middle; }
+			.stat span { display: inline; }
+			.video-section { grid-template-columns: 1fr; gap: 20px; padding-top: 42px; }
+			h2 { font-size: 30px; }
+		}
+
+		@media (prefers-reduced-motion: no-preference) {
+			.page { animation: appear 550ms ease-out both; }
+			@keyframes appear { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+		}
+	</style>
+</head>
+<body>
+	<main class="page">
+		<p class="eyebrow">Infographic · Khoa học tự nhiên</p>
+		<h1>Nước luôn<br>trở về.</h1>
+		<p class="intro">Một giọt nước không biến mất. Nó đổi trạng thái, di chuyển qua bầu trời, mặt đất và đại dương trong một chu trình liên tục.</p>
+
+		<section class="infographic" aria-label="Infographic về vòng tuần hoàn của nước">
+			<svg class="desktop-cycle" viewBox="0 0 1100 470" role="img" aria-labelledby="cycle-title cycle-desc" xmlns="http://www.w3.org/2000/svg">
+				<title id="cycle-title">Vòng tuần hoàn của nước</title>
+				<desc id="cycle-desc">Mặt trời làm nước bốc hơi, hơi nước ngưng tụ thành mây, mưa rơi xuống núi và nước chảy về biển.</desc>
+				<rect width="1100" height="470" fill="#e9f2ec"/>
+				<circle cx="882" cy="95" r="43" fill="#d9e96b"/>
+				<path d="M0 335 178 245l116 57 161-144 128 145 135-85 165 115 217-81v163H0Z" fill="#a8c9aa"/>
+				<path d="m228 470 227-312 75 79 111 233Z" fill="#668e74"/>
+				<path d="m455 158 37 13-37 59-25-29Z" fill="#fff" opacity=".88"/>
+				<path d="M0 378c121-24 205 17 306 0s204-27 313 1 223 12 481-20v111H0Z" fill="#2584a6"/>
+				<path d="M0 408c127-20 192 22 317 3s193-22 297 3 246 18 486-13" fill="none" stroke="#83c6ce" stroke-width="4"/>
+				<g fill="#fff" opacity=".94">
+					<circle cx="280" cy="104" r="31"/><circle cx="319" cy="91" r="41"/><circle cx="360" cy="106" r="29"/><rect x="278" y="105" width="109" height="30" rx="15"/>
+				</g>
+				<g stroke="#2584a6" stroke-width="5" stroke-linecap="round">
+					<path d="M304 153v30"/><path d="M334 153v42"/><path d="M364 153v30"/>
+				</g>
+				<g fill="none" stroke="#087f79" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+					<path d="M144 390c-24-74-15-147 18-211"/><path d="m153 181 14-8-1 16"/>
+					<path d="M410 66c85-30 187-21 257 22"/><path d="m654 73 15 15-20 2"/>
+					<path d="M765 167c33 53 45 113 32 171"/><path d="m789 323 7 17-17-6"/>
+				</g>
+				<g fill="#172b31" font-family="Trebuchet MS, sans-serif">
+					<text x="74" y="188" font-size="17" font-weight="700">BỐC HƠI</text><text x="74" y="211" font-size="13" fill="#53696d">Nhiệt từ mặt trời</text>
+					<text x="425" y="55" font-size="17" font-weight="700">NGƯNG TỤ</text><text x="425" y="78" font-size="13" fill="#53696d">Hơi nước tạo thành mây</text>
+					<text x="694" y="218" font-size="17" font-weight="700">GIÁNG THỦY</text><text x="694" y="241" font-size="13" fill="#53696d">Mưa đưa nước về đất</text>
+					<text x="824" y="384" font-size="17" font-weight="700" fill="#fff">DÒNG CHẢY</text><text x="824" y="407" font-size="13" fill="#e8f7f5">Nước trở về đại dương</text>
+				</g>
+			</svg>
+
+			<svg class="mobile-cycle" viewBox="0 0 420 500" role="img" aria-labelledby="mobile-title mobile-desc" xmlns="http://www.w3.org/2000/svg">
+				<title id="mobile-title">Vòng tuần hoàn của nước</title>
+				<desc id="mobile-desc">Bốn giai đoạn: bốc hơi, ngưng tụ, giáng thủy và dòng chảy trở về biển.</desc>
+				<rect width="420" height="500" fill="#e9f2ec"/>
+				<circle cx="340" cy="65" r="30" fill="#d9e96b"/>
+				<path d="M0 330 87 262l73 48 87-142 82 119 91-54v267H0Z" fill="#a8c9aa"/>
+				<path d="m160 310 87-142 82 119 40 94H0v-25Z" fill="#668e74"/>
+				<path d="M0 386c86-18 148 16 223-2s134-13 197 0v116H0Z" fill="#2584a6"/>
+				<g fill="#fff" opacity=".95"><circle cx="106" cy="91" r="25"/><circle cx="137" cy="81" r="32"/><circle cx="170" cy="94" r="23"/><rect x="104" y="93" width="89" height="22" rx="11"/></g>
+				<g stroke="#2584a6" stroke-width="4" stroke-linecap="round"><path d="M119 129v24"/><path d="M148 129v31"/><path d="M177 129v24"/></g>
+				<g fill="#172b31" font-family="Trebuchet MS, sans-serif" font-size="13" font-weight="700">
+					<text x="24" y="220">BỐC HƠI ↑</text><text x="222" y="72">NGƯNG TỤ</text><text x="234" y="226">GIÁNG THỦY ↓</text><text x="221" y="437" fill="#fff">DÒNG CHẢY → BIỂN</text>
+				</g>
+				<g fill="none" stroke="#087f79" stroke-width="3" stroke-linecap="round"><path d="M78 341c-18-51-15-90 5-119"/><path d="M205 96c31-13 58-14 82-7"/><path d="M302 139c22 31 30 61 23 94"/></g>
+			</svg>
+			<div class="stats" aria-label="Ba thông tin về nước">
+				<div class="stat"><strong>71%</strong><span>bề mặt Trái Đất được nước bao phủ</span></div>
+				<div class="stat"><strong>97%</strong><span>lượng nước trên hành tinh nằm trong đại dương</span></div>
+				<div class="stat"><strong>Liên tục</strong><span>nước luân chuyển giữa khí quyển, đất liền và biển</span></div>
+			</div>
+		</section>
+
+		<section class="video-section" aria-labelledby="video-heading">
+			<div class="video-copy">
+				<p class="eyebrow">Xem tiếp</p>
+				<h2 id="video-heading">Theo dấu một giọt nước</h2>
+				<p>Video minh họa hành trình của nước qua các giai đoạn trong vòng tuần hoàn.</p>
+			</div>
+			<video controls preload="metadata" playsinline aria-label="Video về vòng tuần hoàn của nước">
+				<source src="video.mp4" type="video/mp4">
+				Trình duyệt của bạn không hỗ trợ phát video. Hãy mở tệp MP4 bằng trình duyệt khác.
+			</video>
+		</section>
+
+		<footer class="site-footer">
+			<p>&copy; 2026. Nội dung infographic và mã nguồn thuộc tác giả.</p>
+			<p>Video và tư liệu bên ngoài thuộc quyền sở hữu của các chủ sở hữu tương ứng.</p>
+		</footer>
+	</main>
+</body>
+</html>
